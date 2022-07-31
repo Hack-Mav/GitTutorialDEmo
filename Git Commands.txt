@@ -1,0 +1,107 @@
+9) Change directory
+
+$ cd <"url">
+$ cd ..
+$ cd /
+
+10) to list content in directory
+
+$ ls
+
+11) to check the status of git repository 
+
+$ git status
+
+12) to make your directory a git repository
+
+$ git init
+
+13) to make all of the files and folders in git repository ready for next commit (Or we can say putting them in staging area)
+
+$ git add --a
+
+14)To commit (Or we can say taking snapshot of your staged files)
+
+$ git commit -m "<message>"
+
+15)To see recent commits on git repository
+
+$ git log
+
+16)To stage particular files in your git for next commit
+
+$ git add <file name>
+
+17) To clone reprository
+
+$ git clone <url> <folder_name if required>
+
+18) to remove folder from git
+
+$ rm -rf .git
+
+19) to show present directory
+
+$ pwd
+
+20)To ignore some files to track in git repository
+ i) -> Create text file named ".gitignore" using command (if not exist): touch .gitignore
+ ii)-> Add the name of the file to be ignore in .gitignore file
+
+21)To ignore every file based on extension
+ ii) -> Write *.<extension> in the .gitignore file
+	example : if we want to ignore all files having .log extension
+	open .gitignore file and add " *.log " in that file.  
+
+22)To ignore folder inside git repository
+ ii) -> Write <foldername>/ in the .gitignore file
+	example : if we want to ignore all folder named "dir" inside git repository
+	open .gitignore  file and add " dir/ " in that file.
+
+23)To ignore outer folder inside git repository
+ ii) -> Write /<foldername>/ in the .gitignore file
+	example : if we want to ignore outer folder named "dir" inside git repository
+	open .gitignore  file and add " /dir/ " in that file.
+
+24)To compare same named files present in both staging area and working area 
+ $ git diff
+
+25)To add modified file in staging area again
+ $ git add .
+
+26)to compare same named files present in staging area and last commit
+ $ git diff --staged
+
+27)To direct commit tracked files (without staging)
+$ git commit -a -m "commit message"
+
+28)To Rename file
+$ git mv <present-name> <new-name>
+
+29)To Delete file
+$ git rm <file-name>
+
+30)To make the file untracked from tracked
+$ git rm --cached <filename>
+
+31) Git log -p
+
+32) Git log -p -(2/3/n)
+
+33) Git log --stat
+
+34) Git log --pretty=oneline
+
+35) Git log --pretty=short
+
+36) Git log --pretty=full
+
+37) Git log --since(n).days
+
+38) Git log --since(n).months
+
+39) Git log --since(n).years
+
+40) Git log -pretty=format:"%h - %an"
+
+41) (Git commit --ammend	 Press i to make changes in VC editor, then escape then colon then w and q ; In short (:wq).)
